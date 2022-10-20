@@ -32,6 +32,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 500ms;
 }
 
 .slide h3 {
@@ -40,4 +41,14 @@ body {
   bottom: 20px;
   left: 20px;
   margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
